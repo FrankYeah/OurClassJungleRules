@@ -48,13 +48,8 @@ const checkLicense = async () => {
             message: '驗證成功',
             type: 'success',
         })
-        if (urlParams.hasOwnProperty('isGoogleLogin')) {
-            let { data } = await googleLogin()
-            window.location.href = data.value.data;
-        } else {
-            await useAuthStore().verificationPassed()
-            router.push({ path: '/mission/myList' })
-        }
+        await useAuthStore().verificationPassed()
+        router.push({ path: '/' })
     }
 }
 </script>
