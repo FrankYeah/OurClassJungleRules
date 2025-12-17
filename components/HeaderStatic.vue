@@ -90,7 +90,7 @@
       <nuxt-link v-if="!isLogin" to="/login">
         <div class="login-btn">登入 / 註冊</div>
       </nuxt-link>
-      <div v-if="!checkLicense" @click="isPaidMemberDialogShow = true" class="get-btn">立即購買</div>
+      <a v-if="!checkLicense" href="https://forms.gle/xGEA1VfgdNPF718b8" target="_blank" class="get-btn">立即購買</a>
     </div>
 
     <div class="item-box-phone">
@@ -170,8 +170,8 @@
             登入 / 註冊
           </div>
         </nuxt-link>
-        <div v-if="!checkLicense" @click="isPaidMemberDialogShow = true">
-          <div class="get-btn">立即購買</div>
+        <div v-if="!checkLicense" >
+          <a href="https://forms.gle/xGEA1VfgdNPF718b8" target="_blank" class="get-btn">立即購買</a>
         </div>
         <div v-if="isLogin" @click="handleSignOut" class="signOut-box">
           登出

@@ -163,7 +163,7 @@
           
         </div>
       </div>
-      <div @click="isPaidMemberDialogShow = true" class="intro-buy">立即購買</div>
+      <a href="https://forms.gle/xGEA1VfgdNPF718b8" target="_blank" class="intro-buy">立即購買</a>
     </div>
 
     <div class="new-content">
